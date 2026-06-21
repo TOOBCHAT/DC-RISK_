@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
       </p>
       <div className="footer__links">
         <a 
-          href="https://github.com/nextlevelbuilder/dex-risk-extension" 
+          href="https://github.com/TOOBCHAT/dex-risk-extension" 
           target="_blank" 
           rel="noopener noreferrer"
         >

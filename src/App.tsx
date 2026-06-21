@@ -53,7 +53,7 @@ const App: React.FC = () => {
             />
 
             <a
-              href="https://github.com/nextlevelbuilder/dex-risk-extension"
+              href="https://github.com/TOOBCHAT/dex-risk-extension"
               target="_blank"
               rel="noopener noreferrer"
               className="dashboard-header__github"

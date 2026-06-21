@@ -17,7 +17,7 @@ export const ExtensionCTA: React.FC = () => {
           Get risk indicators directly inside the DexScreener UI. Inspect LP percentages, mint authorities, and whale transactions without leaving your charts.
         </p>
         <a
-          href="https://github.com/nextlevelbuilder/dex-risk-extension"
+          href="https://github.com/TOOBCHAT/dex-risk-extension"
           target="_blank"
           rel="noopener noreferrer"
           className="extension-cta__btn"
