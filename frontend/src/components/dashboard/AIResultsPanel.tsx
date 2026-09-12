@@ -93,7 +93,7 @@ export const AIResultsPanel: React.FC<AIResultsPanelProps> = ({ report }) => {
 
   const tokenName = r.tokenName || 'Unknown Token';
   const tokenSymbol = r.tokenSymbol || 'TOKEN';
-  const tokenAddress = r.tokenAddress || '';
+
   const riskScore = r.riskScore ?? r.risk_score ?? 50;
   const riskLevel = r.riskLevel ?? r.risk_level ?? 'medium';
   const confidence = r.confidence ?? 80;

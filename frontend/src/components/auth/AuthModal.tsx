@@ -11,7 +11,7 @@ type AuthTab = 'email' | 'google' | 'wallet';
 type AuthMode = 'signin' | 'signup';
 
 export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
-  const { signUpWithEmail, signInWithEmail, signInWithGoogle, signInWithWallet } = useAuth();
+  const { signUpWithEmail, signInWithEmail, signInWithWallet } = useAuth();
 
   const [activeTab, setActiveTab] = useState<AuthTab>('email');
   const [authMode, setAuthMode] = useState<AuthMode>('signin');
@@ -42,14 +42,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleGoogle = async () => {
-    setError(null);
-    setLoading(true);
-    const { error: err } = await signInWithGoogle();
-    if (err) { setError(err); setLoading(false); }
-    // Google redirects, so no need to close
   };
 
   const handleWallet = async (type: 'phantom' | 'solflare') => {

@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   const [showAuth, setShowAuth] = useState(false);
 
-  const { status, error, analyzeToken, reset } = useAnalysis();
+  const { status, error, reset } = useAnalysis();
 
   const handleScan = (address: string) => {
     if (!user) {
